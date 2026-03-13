@@ -1,0 +1,9 @@
+demo/
+dev/
+docs/
+src/
+.github/
+node_modules/
+*.config.ts
+tsconfig*.json
+pnpm-lock.yaml
