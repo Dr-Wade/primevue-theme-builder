@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   root: new URL(".", import.meta.url).pathname,
-  base: "/demo/",
+  base: "/primevue-theme-builder/demo/",
   plugins: [
     vue(),
     tailwindcss()
