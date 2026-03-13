@@ -1,6 +1,6 @@
 # Built-in Themes
 
-The package ships with three carefully designed themes. Each is a full PrimeVue preset that you can use directly.
+The package ships with five carefully designed themes. Each is a full PrimeVue preset that you can use directly.
 
 ## Available Themes
 
@@ -9,11 +9,13 @@ The package ships with three carefully designed themes. Each is a full PrimeVue 
 | Nordic | `NordicTheme` | Muted steel-blue primary, warm grey surfaces |
 | Terracotta | `TerracottaTheme` | Dusty clay primary, warm parchment surfaces |
 | Noir | `NoirTheme` | Near-black, cool zinc, editorial feel |
+| Forest | `ForestTheme` | Deep moss greens with earthy, organic surfaces |
+| Pastel | `PastelTheme` | Soft lavender and calm pastel surfaces |
 
 ## Importing Themes
 
 ```ts
-import { NordicTheme, TerracottaTheme, NoirTheme } from "primevue-theme-builder";
+import { NordicTheme, TerracottaTheme, NoirTheme, ForestTheme, PastelTheme } from "primevue-theme-builder";
 ```
 
 ## Using a Theme as the Default
@@ -41,7 +43,7 @@ import {
   themes,         // Record<string, Preset> — all registered presets
   themeLabels,    // Record<string, string> — display names
   themeAccents,   // Record<string, string> — accent hex colors
-  builtInThemeNames, // readonly ["slate", "forest", "ember"]
+  builtInThemeNames, // readonly ["nordic", "terracotta", "noir", "forest", "pastel"]
 } from "primevue-theme-builder";
 ```
 

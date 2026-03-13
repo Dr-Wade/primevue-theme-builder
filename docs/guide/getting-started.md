@@ -33,6 +33,24 @@ The package expects the following peer dependencies in your project:
 npm install vue primevue @primeuix/themes tailwindcss @tailwindcss/vite tailwindcss-primeui primeicons
 ```
 
+## Tailwind CSS v4 Setup
+
+If you are using Tailwind CSS v4, make sure your app stylesheet includes the package as a source so Tailwind can see the utility classes used by the components.
+
+```css
+@import "tailwindcss";
+@plugin "tailwindcss-primeui";
+
+@source "../node_modules/primevue-theme-builder/dist";
+@source "../node_modules/primevue-theme-builder";
+```
+
+You should also include any PrimeVue or app-level styles you normally use, for example:
+
+```ts
+import "primeicons/primeicons.css";
+```
+
 ## Basic Setup
 
 ### 1. Configure PrimeVue with a built-in theme
@@ -44,7 +62,7 @@ import { createApp } from "vue";
 import PrimeVue from "primevue/config";
 import "primeicons/primeicons.css";
 
-import { NordicTheme, useTheme } from "primevue-theme-builder";
+import { NordicTheme, TerracottaTheme, NoirTheme, ForestTheme, PastelTheme, useTheme } from "primevue-theme-builder";
 import App from "./App.vue";
 
 const app = createApp(App);
@@ -88,11 +106,11 @@ That's it! Your users can now click the palette button to switch between built-i
 | `useTheme()` | Composable — theme switching and registration |
 | `useThemeBuilder()` | Composable — full theme editing state machine |
 | `generatePreset()` | Function — create a PrimeVue preset from state |
-| `NordicTheme` / `TerracottaTheme` / `NoirTheme` | Built-in theme presets |
+| `NordicTheme` / `TerracottaTheme` / `NoirTheme` / `ForestTheme` / `PastelTheme` | Built-in theme presets |
 
 ## Next Steps
 
-- [Built-in Themes](/guide/built-in-themes) — explore the three included themes
+- [Built-in Themes](/guide/built-in-themes) — explore the five included themes
 - [Theme Chooser](/guide/theme-chooser) — customize the theme picker
 - [Theme Builder](/guide/theme-builder) — embed the full editor
 - [Programmatic Usage](/guide/programmatic-usage) — generate themes from code

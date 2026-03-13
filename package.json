@@ -2,6 +2,15 @@
   "name": "primevue-theme-builder",
   "version": "0.1.0",
   "type": "module",
+  "homepage": "https://dr-wade.github.io/primevue-theme-builder/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dr-wade/primevue-theme-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dr-wade/primevue-theme-builder/issues"
+  },
+  "packageManager": "pnpm@10.30.3",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
