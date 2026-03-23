@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.1.2] - 2026-03-23
+
+### Fixed
+
+- Fixed z-index issues with modal and drawer components
+
 ## [0.1.0] - 2026-03-13
 
 ### Added

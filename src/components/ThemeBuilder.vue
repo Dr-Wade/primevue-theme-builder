@@ -97,7 +97,7 @@ defineExpose({ primarySwatches, surfaceSwatches, state });
     <Transition name="tb-fade">
       <div
         v-if="props.visible"
-        class="fixed inset-0 z-[1100]"
+        class="fixed inset-0 z-[900]"
       >
         <!-- Backdrop -->
         <div
@@ -352,7 +352,7 @@ defineExpose({ primarySwatches, surfaceSwatches, state });
     <Transition name="tb-fade">
       <div
         v-if="exportVisible"
-        class="fixed inset-0 z-[1200] flex items-center justify-center"
+        class="fixed inset-0 z-[950] flex items-center justify-center"
         style="background: rgba(0,0,0,0.5)"
         @click.self="exportVisible = false"
       >
